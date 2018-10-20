@@ -32,6 +32,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "gulp": "^4.0.0",
     "gulp4": "^4.0.2",
     "mocha": "^5.2.0",
     "webpack": "^4.20.2",
