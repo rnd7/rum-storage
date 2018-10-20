@@ -1,4 +1,4 @@
-import gulp from 'gulp4'
+import gulp from 'gulp'
 import path from 'path'
 import process from 'process'
 import webpack from 'webpack'
