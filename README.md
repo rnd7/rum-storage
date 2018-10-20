@@ -37,7 +37,7 @@ import { Storage } from '@rnd7/rum-storage'
 ```javascript
 let myStorage = new Storage()
 let sid = 'someStorageId'
-myStorage.insert(sid, {myProperty: "myValue"}).then(console.log)
+myStorage.insert({sid, myProperty: "myValue"}).then(console.log)
 ```
 ## API
 
