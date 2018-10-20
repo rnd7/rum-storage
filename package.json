@@ -2,7 +2,7 @@
   "name": "@rnd7/rum-storage",
   "version": "1.0.4",
   "description": "Rumbullion Storage Abstraction Base Class",
-  "main": "",
+  "main": "src/index.js",
   "directories": {
     "doc": "docs"
   },
