@@ -12,7 +12,7 @@ export const config = {
   output: {
     filename: 'rum-storage.js',
     path: path.resolve(__dirname, '../dist'),
-    library: 'rum-idb-storage',
+    library: 'rum-storage',
     libraryTarget: 'umd'
   },
   context: path.resolve(__dirname, '../src'),
