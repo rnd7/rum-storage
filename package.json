@@ -1,0 +1,51 @@
+{
+  "name": "@rnd7/rum-storage",
+  "version": "1.0.0",
+  "description": "Rumbullion Storage Abstraction Base Class",
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha --require @babel/register",
+    "build": "gulp4 --require @babel/register --gulpfile tasks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnd7/rum-idb-storage.git"
+  },
+  "keywords": [
+    "rum",
+    "rumbullion",
+    "storage",
+    "es6"
+  ],
+  "author": "rnd7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rnd7/rum-idb-storage/issues"
+  },
+  "homepage": "https://github.com/rnd7/rum-idb-storage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "gulp4": "^4.0.2",
+    "mocha": "^5.2.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": "> 0.25%, not dead"
+        }
+      ]
+    ]
+  }
+}
