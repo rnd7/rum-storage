@@ -2,8 +2,8 @@
   "name": "@rnd7/rum-storage",
   "version": "1.0.7",
   "description": "Rumbullion Storage Abstraction Base Class",
-  "module": "src/index.js",
-  "main": "dist/rum-storage.js",
+  "module": "dist/rum-storage-esm.js",
+  "main": "dist/rum-storage-umd.js",
   "directories": {
     "doc": "docs"
   },
@@ -34,7 +34,10 @@
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.4",
     "gulp": "^4.0.0",
+    "gulp-file": "^0.4.0",
     "mocha": "^5.2.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0"
@@ -42,10 +45,7 @@
   "babel": {
     "presets": [
       [
-        "@babel/preset-env",
-        {
-          "targets": "> 0.25%, not dead"
-        }
+        "@babel/preset-env"
       ]
     ]
   }
