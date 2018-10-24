@@ -1,5 +1,5 @@
 import assert from 'assert'
-import Storage from '../src'
+import { Storage } from '../src'
 
 const TEST_SID = '123'
 const TEST_DATA = {
@@ -242,13 +242,3 @@ describe('Rumbullion Storage', () => {
     })
   })
 })
-
-/*
-
-it('resolves', (done) => {
-  resolvingPromise.then( (result) => {
-    expect(result).to.equal('promise resolved');
-  }).finally(done);
-});
-
-  assert.equal(true, storage._cache === Object(storage._cache))*/

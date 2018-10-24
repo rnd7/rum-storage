@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -164,5 +168,8 @@ function () {
   return Storage;
 }();
 
-export default Storage;
-export { STORAGE_DEFAULTS, NOT_FOUND, METHOD_NOT_ALLOWED, Storage };
+exports.STORAGE_DEFAULTS = STORAGE_DEFAULTS;
+exports.NOT_FOUND = NOT_FOUND;
+exports.METHOD_NOT_ALLOWED = METHOD_NOT_ALLOWED;
+exports.Storage = Storage;
+//# sourceMappingURL=rum-storage-cjs.js.map

@@ -2,14 +2,21 @@
   "name": "@rnd7/rum-storage",
   "version": "1.0.8",
   "description": "Rumbullion Storage Abstraction Base Class",
-  "module": "dist/rum-storage-esm.js",
-  "main": "dist/rum-storage-umd.js",
+  "module": "dist/rum-storage-es.js",
+  "main": "dist/rum-storage-cjs.js",
+  "browser": "dist/rum-storage-browser.js",
+  "rum": {
+    "maker": {
+      "entry": "src/index.js"
+    },
+    "tester": {}
+  },
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "mocha --require @babel/register",
-    "build": "gulp --require @babel/register --gulpfile tasks"
+    "test": "test-rum",
+    "build": "make-rum"
   },
   "repository": {
     "type": "git",
@@ -29,24 +36,7 @@
   "homepage": "https://github.com/rnd7/rum-storage#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/register": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "gulp": "^4.0.0",
-    "gulp-file": "^0.4.0",
-    "mocha": "^5.2.0",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-middleware": "^3.4.0"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env"
-      ]
-    ]
+    "@rnd7/rum-maker": "^1.0.18",
+    "@rnd7/rum-tester": "^1.0.20"
   }
 }
