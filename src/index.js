@@ -9,10 +9,6 @@ export const METHOD_NOT_ALLOWED = 405
 export class Storage {
   constructor(opts) {
     Object.assign(this, STORAGE_DEFAULTS, opts)
-    this._init()
-  }
-
-  _init() {
     this._cache = {}
   }
 
