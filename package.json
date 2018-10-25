@@ -1,6 +1,6 @@
 {
   "name": "@rnd7/rum-storage",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Rumbullion Storage Abstraction Base Class",
   "module": "dist/rum-storage-es.js",
   "main": "dist/rum-storage-cjs.js",
